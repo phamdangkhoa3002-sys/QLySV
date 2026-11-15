@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuFindSV"
+        android:title="Tìm kiếm sinh viên"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menThongKe"
+        android:title="Danh sách sinh viên theo mã lớp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuExportPDF"
+        android:title="Xuất PDF"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuExit"
+        android:title="Thoát"
+        app:showAsAction="never" />
+
+</menu>

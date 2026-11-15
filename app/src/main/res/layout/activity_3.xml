@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Activity3">
+
+    <!-- Top right: Quay lại button -->
+    <Button
+        android:id="@+id/btnQuayLai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:backgroundTint="#757575"
+        android:text="Quay lại"
+        android:textColor="#FFFFFF" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="XUẤT DANH SÁCH SINH VIÊN"
+        android:textColor="#6C4AB6"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Class code label -->
+    <TextView
+        android:id="@+id/tvMaLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mã lớp:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Class code input -->
+    <EditText
+        android:id="@+id/edtMaLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã lớp cần tìm"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <!-- Search button -->
+    <Button
+        android:id="@+id/btnTimTheoLop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#6C4AB6"
+        android:text="Tìm kiếm"
+        android:textColor="#FFFFFF" />
+
+    <!-- Student list title -->
+    <TextView
+        android:id="@+id/tvDanhSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Danh sách sinh viên"
+        android:textColor="#6C4AB6"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Student list -->
+    <ListView
+        android:id="@+id/lvDanhSachSV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+
+    <!-- Export PDF button -->
+    <Button
+        android:id="@+id/btnXuatPDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF7E47"
+        android:text="Xuất danh sách theo PDF"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

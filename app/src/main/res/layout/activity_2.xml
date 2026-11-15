@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity2">
+
+    <!-- Quay lại button at top right -->
+    <Button
+        android:id="@+id/btnQuayLai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#757575"
+        android:text="Quay lại"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTieuDe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="TÌM KIẾM SINH VIÊN"
+        android:textColor="#6C4AB6"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnQuayLai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Student ID label -->
+    <TextView
+        android:id="@+id/tvMaSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mã sinh viên:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTieuDe" />
+
+    <!-- Student ID input -->
+    <EditText
+        android:id="@+id/edtMaSV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Nhập mã sinh viên cần tìm"
+        android:inputType="text"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMaSV" />
+
+    <!-- Search button only -->
+    <Button
+        android:id="@+id/btnTimKiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6C4AB6"
+        android:text="Tìm kiếm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/edtMaSV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Search result title -->
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Thông tin sinh viên"
+        android:textColor="#6C4AB6"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnTimKiem" />
+
+    <!-- Search result information -->
+    <TextView
+        android:id="@+id/tvThongTinSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#F2F4F7"
+        android:padding="12dp"
+        android:text="Thông tin sinh viên sẽ hiển thị ở đây."
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvKetQua" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
